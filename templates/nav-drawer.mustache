@@ -1,0 +1,54 @@
+{{!
+    @template theme_boost/nav-drawer
+
+
+    Example context (json): {}
+}}
+<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex {{^navdraweropen}}closed{{/navdraweropen}}" aria-hidden="{{#navdraweropen}}false{{/navdraweropen}}{{^navdraweropen}}true{{/navdraweropen}}" tabindex="-1">
+   <div class="header-padding-uwi"></div>
+    {{> theme_boost/flat_navigation }}
+</div>
+
+
+
+<style>
+.header-uwi {
+   background-color:#CC5A2A;
+   color:white;
+   font-weight:400;
+   font-size:36px;
+   margin:0;
+   padding: 0;
+}
+
+.header-uwi img {
+   padding: 10px 15px;
+}
+
+.header-uwi, .header-padding-uwi {
+   height:96px!important;
+}
+
+#nav-drawer .header-padding-uwi {
+   height:111px!important;
+}
+
+.slideup, .slidedown {
+            max-height: 0;
+            overflow-y: hidden;
+            transition: max-height 0.65s ease-in-out;
+}
+.slidedown {
+   max-height: 96px ;
+}
+
+.header-padding-uwi.slidedown {
+   max-height:111px;
+}
+
+
+.navbar .site-name, [data-action=toggle-drawer] .icon{
+      color:#CC5A2A;
+}
+
+</style>

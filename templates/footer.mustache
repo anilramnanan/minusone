@@ -1,0 +1,133 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page footer.
+}}
+
+<script>
+/*
+function uwiHasClass(el, className) {
+    if (el.classList)
+        return el.classList.contains(className);
+    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+}
+
+function uwiAddClass(el, className) {
+    if (el.classList)
+        el.classList.add(className)
+    else if (!hasClass(el, className))
+        el.className += " " + className;
+}
+
+function uwiRemoveClass(el, className) {
+    if (el.classList)
+        el.classList.remove(className)
+    else if (hasClass(el, className))
+    {
+        var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+        el.className = el.className.replace(reg, ' ');
+    }
+}
+
+function uwiDebounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+function uwiAddListeners() {
+     window.addEventListener('scroll' , uwiDebounce(function(){
+        var s = (document.documentElement || document.body.parentNode ||
+document.body).scrollTop;;
+        var h = document.querySelector('.header-uwi');
+        var hp = document.querySelector('.header-padding-uwi');
+        var hsd = uwiHasClass(h, "slidedown");
+        console.log(s);
+        console.log(h);
+        console.log(hp);
+        console.log(hsd);
+
+        if(s > 48 && hsd){
+           uwiRemoveClass(h, "slidedown");
+           uwiAddClass(h, "slideup");
+           uwiRemoveClass(hp, "slidedown");
+           uwiAddClass(hp, "slideup");
+        } else {
+           console.log('show');
+           uwiRemoveClass(h, "slideup");
+           uwiAddClass(h, "slidedown");
+           uwiRemoveClass(hp, "slideup")
+           uwiAddClass(hp, "slidedown");
+        }
+     }, 250));
+ }
+uwiAddListeners();
+*/
+
+   $( document ).ready(function() {
+      $( document ).on('scroll', function(){
+         s = $(this).scrollTop();
+         h = $('.header-uwi');
+         hp = $('.header-padding-uwi');
+         hsd = h.hasClass("slidedown")
+         if(s > 48){
+            console.log('hide');
+            if(hsd){
+               h.removeClass("slidedown").addClass("slideup");
+               hp.removeClass("slidedown").addClass("slideup");
+               //hp.hide();
+            }
+         } else {
+            console.log('show');
+            h.removeClass("slideup").addClass("slidedown");
+            hp.removeClass("slideup").addClass("slidedown");
+            //hp.show();
+         }
+      })
+   });
+</script>
+<footer id="page-footer" class="py-3 bg-dark text-light">
+    <div class="container">
+        <div id="course-footer">{{{ output.course_footer }}}</div>
+
+        {{# output.page_doc_link }}
+            <p class="helplink">{{{ output.page_doc_link }}}</p>
+        {{/ output.page_doc_link }}
+
+        {{{ output.login_info }}}
+        <div class="tool_usertours-resettourcontainer"></div>
+        {{{ output.home_link }}}
+        <nav class="nav navbar-nav d-md-none">
+            {{# output.custom_menu_flat }}
+                <ul class="list-unstyled pt-3">
+                    {{> theme_boost/custom_menu_footer }}
+                </ul>
+            {{/ output.custom_menu_flat }}
+        </nav>
+        {{{ output.standard_footer_html }}}
+        {{{ output.standard_end_of_body_html }}}
+    </div>
+</footer>
