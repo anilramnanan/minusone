@@ -18,7 +18,7 @@
  * Course renderer.
  *
  * @package    theme_noanme
- * @copyright  2019 Open Campus Team - FMCorz.net
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -33,7 +33,7 @@ require_once($CFG->dirroot . '/course/renderer.php');
  * Course renderer class.
  *
  * @package    theme_noanme
- * @copyright  2019 Open Campus Team - FMCorz.net
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class course_renderer extends \core_course_renderer {
