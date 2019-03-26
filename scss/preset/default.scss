@@ -47,6 +47,7 @@ $heading-MON = rgba(137, 0, 0) !default;      // MON campus colour
 $heading-CAV = rgba(242, 169, 0) !default;    // CAV campus colour
 $heading-XCM = rgba(0, 122, 82) !default;     // Cross campus colour
 
+
 // Options
 $enable-rounded: false !default;
 
@@ -126,7 +127,7 @@ body {
 @include bg-variant(".bg-gray", $gray-200);
 
 
-body.OC h1, body.OC h2, body.OC h3, body.OC h4, body.OC h5, body.OC h6,
-body.OC .h1, body.OC .h2, body.OC .path-calendar body.OC .maincalendar body.OC .calendar-controls body.OC .current, body.OC .h3, body.OC .h4, body.OC .h5, body.OC .h6 {
-   color: $heading-OC;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .path-calendar .maincalendar .calendar-controls .current, .h3, .h4, .h5, .h6 {
+   color: $uwicampus !important;
 }

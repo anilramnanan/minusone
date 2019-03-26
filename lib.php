@@ -132,6 +132,7 @@ function theme_minusone_get_pre_scss($theme) {
     $configurable = [
         // Config key => [variableName, ...].
         'brandcolor' => ['primary'],
+        'uwicampus' => ['uwicampus'],
     ];
 
     // Prepend variables first.

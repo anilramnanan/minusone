@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2019032605;
+$plugin->version   = 2019032606;
 $plugin->requires  = 2018112800;
 $plugin->component = 'theme_minusone';
