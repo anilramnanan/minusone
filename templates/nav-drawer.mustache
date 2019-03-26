@@ -4,7 +4,7 @@
 
     Example context (json): {}
 }}
-<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex {{^navdraweropen}}closed{{/navdraweropen}}" aria-hidden="{{#navdraweropen}}false{{/navdraweropen}}{{^navdraweropen}}true{{/navdraweropen}}" tabindex="-1">
+<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex {{uwicampus}} {{^navdraweropen}}closed{{/navdraweropen}}" aria-hidden="{{#navdraweropen}}false{{/navdraweropen}}{{^navdraweropen}}true{{/navdraweropen}}" tabindex="-1">
    <div class="header-padding-uwi"></div>
     {{> theme_minusone/flat_navigation }}
 </div>
@@ -17,19 +17,28 @@
    padding: 0;
 }
 
-.header-uwi.OC {
+#nav-drawer nav a.active{
+   border:transparent;
+}
+
+.header-uwi.OC,
+#nav-drawer.OC nav a.active {
    background-color: rgba(191, 87, 0, 0.90)!important;      // OC campus colour
 }
-.header-uwi.STA {
+.header-uwi.STA,
+#nav-drawer.STA nav a.active {
    background-color: rgba(0, 94, 184, 0.90)!important;   // STA campus colour
 }
-.header-uwi.MON {
+.header-uwi.MON,
+#nav-drawer.MON nav a.active {
    background-color: rgba(137, 0, 0, 0.90)!important;      // MON campus colour
 }
-.header-uwi.CAV {
+.header-uwi.CAV,
+#nav-drawer.CAV nav a.active {
    background-color: rgba(242, 169, 0, 0.90)!important;    // CAV campus colour
 }
-.header-uwi.XCM {
+.header-uwi.XCM,
+#nav-drawer.XCM nav a.active {
    background-color: rgba(0, 122, 82, 0.90)!important;     // Cross campus colour
 }
 
@@ -86,5 +95,6 @@ color: rgba(242, 169, 0, 1)!important;
 [data-action=toggle-drawer].XCM .icon{
 color: rgba(0, 122, 82, 1)!important;
 }
+
 
 </style>

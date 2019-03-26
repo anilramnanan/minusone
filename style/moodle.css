@@ -12537,7 +12537,7 @@ span.editinstructions {
 /* Use a variable for the drawer background colors. */
 [data-region="drawer"] {
   position: fixed;
-  padding: 20px 20px;
+  padding: 0px 0px;
   width: 285px;
   top: 50px;
   height: calc(100% - 50px);
