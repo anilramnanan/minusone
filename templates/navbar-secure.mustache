@@ -21,7 +21,7 @@
 
         {{# output.should_display_navbar_logo }}
             <span class="logo d-none d-sm-inline">
-                <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+                <img src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/logo-uwi-trans-{{uwicampus}}.png" alt="{{sitename}}">
             </span>
         {{/ output.should_display_navbar_logo }}
         <span class="site-name d-none d-md-inline">{{{ sitename }}}</span>

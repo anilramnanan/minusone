@@ -52,7 +52,10 @@ $templatecontext = [
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
-    'uwicampus' => $uwicampus
+    'uwicampus' => $uwicampus,
+    'uwicampusname' => $uwicampusname,
+    'uwicampusurl' => $uwicampusurl,
+    'year' => date('Y')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

@@ -28,7 +28,10 @@ require_once('inject.php');
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
-    'uwicampus' => $uwicampus
+    'uwicampus' => $uwicampus,
+    'uwicampusname' => $uwicampusname,
+    'uwicampusurl' => $uwicampusurl,
+    'year' => date('Y')
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/embedded', $templatecontext);

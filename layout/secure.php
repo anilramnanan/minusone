@@ -35,7 +35,10 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes,
     'sidepreblocks' => $blockshtml,
     'hasblocks' => $hasblocks,
-    'uwicampus' => $uwicampus
+    'uwicampus' => $uwicampus,
+    'uwicampusname' => $uwicampusname,
+    'uwicampusurl' => $uwicampusurl,
+    'year' => date('Y')
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/secure', $templatecontext);

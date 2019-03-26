@@ -13,9 +13,24 @@
 
 <style>
 .header-uwi {
-   background-color:#CC5A2A;
    margin:0;
    padding: 0;
+}
+
+.header-uwi.OC {
+   background-color: rgba(191, 87, 0, 0.90)!important;      // OC campus colour
+}
+.header-uwi.STA {
+   background-color: rgba(0, 94, 184, 0.90)!important;   // STA campus colour
+}
+.header-uwi.MON {
+   background-color: rgba(137, 0, 0, 0.90)!important;      // MON campus colour
+}
+.header-uwi.CAV {
+   background-color: rgba(242, 169, 0, 0.90)!important;    // CAV campus colour
+}
+.header-uwi.XCM {
+   background-color: rgba(0, 122, 82, 0.90)!important;     // Cross campus colour
 }
 
 .header-uwi img {
@@ -51,8 +66,25 @@
 }
 
 
-.navbar .site-name, [data-action=toggle-drawer] .icon{
-   color:#CC5A2A;
+.navbar .site-name.OC,
+[data-action=toggle-drawer].OC .icon{
+   color: rgba(191, 87, 0, 1)!important;
+}
+.navbar .site-name.STA,
+[data-action=toggle-drawer].STA .icon{
+color: rgba(0, 94, 184, 1)!important;
+}
+.navbar .site-name.MON,
+[data-action=toggle-drawer].MON .icon{
+color: rgba(137, 0, 0, 1)!important;
+}
+.navbar .site-name.CAV,
+[data-action=toggle-drawer].CAV .icon{
+color: rgba(242, 169, 0, 1)!important;
+}
+.navbar .site-name.XCM,
+[data-action=toggle-drawer].XCM .icon{
+color: rgba(0, 122, 82, 1)!important;
 }
 
 </style>

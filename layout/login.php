@@ -31,7 +31,10 @@ $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
     'bodyattributes' => $bodyattributes,
-    'uwicampus' => $uwicampus
+    'uwicampus' => $uwicampus,
+    'uwicampusname' => $uwicampusname,
+    'uwicampusurl' => $uwicampusurl,
+    'year' => date('Y')
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/login', $templatecontext);

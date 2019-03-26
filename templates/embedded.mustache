@@ -57,18 +57,22 @@ require(['theme_minusone/loader']);
 
 $( document ).ready(function() {
    $( document ).on('scroll', function(){
-      s = $(this).scrollTop();
+      wh = $( window ).height();
+      dh = $( document ).height();
+      ds = ((dh-wh)>48)
+
+      s = Math.floor($(this).scrollTop());
       h = $('.header-uwi');
       hp = $('.header-padding-uwi');
       hsd = h.hasClass("slidedown")
-      if(s > 48){
+      if(s > 48 && ds){
          console.log('hide');
          if(hsd){
             h.removeClass("slidedown").addClass("slideup");
             hp.removeClass("slidedown").addClass("slideup");
             //hp.hide();
          }
-      } else {
+      } elseif(ds) {
          console.log('show');
          h.removeClass("slideup").addClass("slidedown");
          hp.removeClass("slideup").addClass("slidedown");

@@ -88,9 +88,10 @@
 </html>
 {{#js}}
 require(['theme_minusone/loader']);
+
 $( document ).ready(function() {
    $( document ).on('scroll', function(){
-      s = $(this).scrollTop();
+      s = Math.floor($(this).scrollTop());
       h = $('.header-uwi');
       hp = $('.header-padding-uwi');
       hsd = h.hasClass("slidedown")

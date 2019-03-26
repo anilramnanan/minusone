@@ -26,3 +26,28 @@ defined('MOODLE_INTERNAL') || die();
 
 $theme = theme_config::load('minusone');
 $uwicampus = $theme->settings->uwicampus;
+
+$campuses = array(
+	'XCM' => array(
+		'',
+		'uwi.edu'
+	),
+	'OC' => array(
+		'Open Campus',
+		'open.uwi.edu'
+	),
+	'STA' => array(
+		'St. Augustine',
+		'sta.uwi.edu'
+	),
+	'MON' => array(
+		'Mona',
+		'mona.uwi.edu'
+	),
+	'CAV' => array(
+		'Cave Hill',
+		'cavehill.uwi.edu'
+	));
+
+   $uwicampusname = $campuses[$campus][0];
+   $uwicampusurl = $campuses[$campus][1];
