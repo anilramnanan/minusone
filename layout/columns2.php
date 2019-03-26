@@ -18,11 +18,14 @@
  * A two column layout for the minusone theme.
  *
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
+
+require_once('inject.php');
+
 
 user_preference_allow_ajax_update('drawer-open-nav', PARAM_ALPHA);
 require_once($CFG->libdir . '/behat/lib.php');
@@ -48,7 +51,8 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes,
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
-    'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu)
+    'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
+    'uwicampus' => $uwicampus
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

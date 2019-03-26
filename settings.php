@@ -63,11 +63,11 @@ if ($ADMIN->fulltree) {
     $description = get_string('uwicampus_desc', 'theme_minusone');
 
     $defaultcampus = 'OC';
-    $campuses['campus-XCM'] = 'Cross Campus / Shared Moodle';
-    $campuses['campus-CAV'] = 'Cave Hill Campus';
-    $campuses['campus-MON'] = 'Mona Campus';
-    $campuses['campus-OC'] = 'Open Campus';
-    $campuses['campus-STA'] = 'St. Augustine Campus';
+    $campuses['XCM'] = 'Cross Campus / Shared Moodle';
+    $campuses['CAV'] = 'Cave Hill Campus';
+    $campuses['MON'] = 'Mona Campus';
+    $campuses['OC'] = 'Open Campus';
+    $campuses['STA'] = 'St. Augustine Campus';
 
     $setting = new admin_setting_configselect($name, $title, $description, $defaultcampus, $campuses);
     $setting->set_updatedcallback('theme_reset_all_caches');

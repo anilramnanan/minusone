@@ -18,17 +18,19 @@
  * A maintenance layout for the minusone theme.
  *
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
+require_once('inject.php');
 
 $templatecontext = [
     // We cannot pass the context to format_string, this layout can be used during
     // installation. At that stage database tables do not exist yet.
     'sitename' => format_string($SITE->shortname, true, ["escape" => false]),
-    'output' => $OUTPUT
+    'output' => $OUTPUT,
+    'uwicampus' => $uwicampus
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/maintenance', $templatecontext);

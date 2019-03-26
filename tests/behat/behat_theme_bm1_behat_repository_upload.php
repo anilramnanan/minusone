@@ -17,7 +17,7 @@
 /**
  * Override definitions for the upload repository type.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ use Behat\Mink\Exception\ExpectationException as ExpectationException,
 /**
  * Override steps definitions to deal with the upload repository.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_repository_upload extends behat_repository_upload {

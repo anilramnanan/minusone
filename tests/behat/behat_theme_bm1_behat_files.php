@@ -17,7 +17,7 @@
 /**
  * Files interactions with behat overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ use Behat\Mink\Exception\ExpectationException as ExpectationException,
 /**
  * Files-related actions overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_files extends behat_files {

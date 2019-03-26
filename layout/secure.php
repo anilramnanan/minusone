@@ -18,11 +18,12 @@
  * A secure layout for the minusone theme.
  *
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
+require_once('inject.php');
 
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
@@ -33,8 +34,8 @@ $templatecontext = [
     'output' => $OUTPUT,
     'bodyattributes' => $bodyattributes,
     'sidepreblocks' => $blockshtml,
-    'hasblocks' => $hasblocks
+    'hasblocks' => $hasblocks,
+    'uwicampus' => $uwicampus
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/secure', $templatecontext);
-

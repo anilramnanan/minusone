@@ -18,7 +18,7 @@
  * nicely styled errors in an mform.
  *
  * @module     theme_minusone/form-display-errors
- * @copyright  2016 Damyon Wiese <damyon@moodle.com>
+ * @copyright  2019 Open Campus Team <damyon@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define(['jquery', 'core/event'], function($, Event) {

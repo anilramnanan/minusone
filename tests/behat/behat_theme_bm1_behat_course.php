@@ -17,7 +17,7 @@
 /**
  * Behat course-related steps definitions overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -33,7 +33,7 @@ use Behat\Gherkin\Node\TableNode as TableNode,
 /**
  * Course-related steps definitions overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_course extends behat_course {

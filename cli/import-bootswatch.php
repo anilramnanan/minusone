@@ -19,7 +19,7 @@
  *
  * @package    theme_minusone
  * @subpackage cli
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

@@ -15,15 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * MinusOne.
+ * A one column layout for the minusone theme.
  *
- * @package    theme_minusone
- * @copyright  2019 Open Campus Team
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   theme_minusone
+ * @copyright 2019 Open Campus Team
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2019032609;
-$plugin->requires  = 2018112800;
-$plugin->component = 'theme_minusone';
+$theme = theme_config::load('minusone');
+$uwicampus = $theme->settings->uwicampus;

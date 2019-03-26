@@ -25,14 +25,14 @@ require_once($CFG->dirroot . '/files/renderer.php');
 /**
  * Rendering of files viewer related widgets.
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
  * Rendering of files viewer related widgets.
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class files_renderer extends \core_files_renderer {

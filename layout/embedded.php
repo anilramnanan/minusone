@@ -18,15 +18,17 @@
  * An embedded layout for the minusone theme.
  *
  * @package   theme_minusone
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
+require_once('inject.php');
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
-    'output' => $OUTPUT
+    'output' => $OUTPUT,
+    'uwicampus' => $uwicampus
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/embedded', $templatecontext);

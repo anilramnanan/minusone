@@ -17,7 +17,7 @@
 /**
  * Filemanager and filepicker manipulation steps definitions overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ use Behat\Mink\Exception\ExpectationException as ExpectationException,
 /**
  * Steps definitions to deal with the filemanager and filepicker overrides.
  *
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_filepicker extends behat_theme_minusone_behat_files {

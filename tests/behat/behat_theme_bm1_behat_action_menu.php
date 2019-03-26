@@ -19,7 +19,7 @@
  *
  * @package    core
  * @category   test
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -32,7 +32,7 @@ require_once(__DIR__ . '/../../../../lib/tests/behat/behat_action_menu.php');
  *
  * @package    core
  * @category   test
- * @copyright  2016 Damyon Wiese
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_action_menu extends behat_action_menu {

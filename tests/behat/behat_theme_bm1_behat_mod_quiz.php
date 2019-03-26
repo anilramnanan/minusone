@@ -17,7 +17,7 @@
 /**
  * Steps definitions related to mod_quiz overrides.
  *
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -32,7 +32,7 @@ use Behat\Mink\Exception\ExpectationException as ExpectationException;
 /**
  * Steps definitions related to mod_quiz overrides.
  *
- * @copyright 2016 Damyon Wiese
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_theme_minusone_behat_mod_quiz extends behat_mod_quiz {
