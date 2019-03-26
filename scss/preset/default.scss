@@ -32,6 +32,21 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+
+// UWI Colours
+
+$campus-OC = rgba(191, 87, 0, 0.90) !default;      // OC campus colour
+$campus-STA = rgba(70, 130, 180, 0.90) !default;   // STA campus colour
+$campus-MON = rgba(137, 0, 0, 0.90) !default;      // MON campus colour
+$campus-CAV = rgba(242, 169, 0, 0.90) !default;    // CAV campus colour
+$campus-XCM = rgba(0, 122, 82, 0.90) !default;     // Cross campus colour
+
+$heading-OC = rgba(191, 87, 0) !default;      // OC campus colour
+$heading-STA = rgba(70, 130, 180) !default;   // STA campus colour
+$heading-MON = rgba(137, 0, 0) !default;      // MON campus colour
+$heading-CAV = rgba(242, 169, 0) !default;    // CAV campus colour
+$heading-XCM = rgba(0, 122, 82) !default;     // Cross campus colour
+
 // Options
 $enable-rounded: false !default;
 
@@ -109,3 +124,9 @@ body {
 }
 
 @include bg-variant(".bg-gray", $gray-200);
+
+
+body.OC h1, body.OC h2, body.OC h3, body.OC h4, body.OC h5, body.OC h6,
+body.OC .h1, body.OC .h2, body.OC .path-calendar body.OC .maincalendar body.OC .calendar-controls body.OC .current, body.OC .h3, body.OC .h4, body.OC .h5, body.OC .h6 {
+   color: $heading-OC;
+}

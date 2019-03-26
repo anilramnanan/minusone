@@ -27,50 +27,48 @@ if ($ADMIN->fulltree) {
     $page = new admin_settingpage('theme_minusone_general', get_string('generalsettings', 'theme_minusone'));
 
     // Preset.
-    $name = 'theme_minusone/preset';
-    $title = get_string('preset', 'theme_minusone');
-    $description = get_string('preset_desc', 'theme_minusone');
-    $default = 'default.scss';
+    // $name = 'theme_minusone/preset';
+    // $title = get_string('preset', 'theme_minusone');
+    // $description = get_string('preset_desc', 'theme_minusone');
+    // $default = 'default.scss';
+    //
+    // $context = context_system::instance();
+    // $fs = get_file_storage();
+    // $files = $fs->get_area_files($context->id, 'theme_minusone', 'preset', 0, 'itemid, filepath, filename', false);
+    //
+    // $choices = [];
+    // foreach ($files as $file) {
+    //     $choices[$file->get_filename()] = $file->get_filename();
+    // }
+    // // These are the built in presets.
+    // $choices['default.scss'] = 'default.scss';
+    // $choices['plain.scss'] = 'plain.scss';
+    //
+    // $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    // $setting->set_updatedcallback('theme_reset_all_caches');
+    // $page->add($setting);
 
-    $context = context_system::instance();
-    $fs = get_file_storage();
-    $files = $fs->get_area_files($context->id, 'theme_minusone', 'preset', 0, 'itemid, filepath, filename', false);
+    // // Preset files setting.
+    // $name = 'theme_minusone/presetfiles';
+    // $title = get_string('presetfiles','theme_minusone');
+    // $description = get_string('presetfiles_desc', 'theme_minusone');
+    //
+    // $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
+    //     array('maxfiles' => 20, 'accepted_types' => array('.scss')));
+    // $page->add($setting);
 
-    $choices = [];
-    foreach ($files as $file) {
-        $choices[$file->get_filename()] = $file->get_filename();
-    }
-    // These are the built in presets.
-    $choices['default.scss'] = 'default.scss';
-    $choices['plain.scss'] = 'plain.scss';
 
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
+    $name = 'theme_minusone/uwicampus';
+    $title = get_string('uwicampus', 'theme_minusone');
+    $description = get_string('uwicampus_desc', 'theme_minusone');
+    $defaultcampus = 'OC';
+    $campuses['XCM'] = 'Cross Campus / Shared Moodle';
+    $campuses['CAV'] = 'Cave Hill Campus';
+    $campuses['MON'] = 'Mona Campus';
+    $campuses['OC'] = 'Open Campus';
+    $campuses['STA'] = 'St. Augustine Campus';
 
-    // Preset files setting.
-    $name = 'theme_minusone/presetfiles';
-    $title = get_string('presetfiles','theme_minusone');
-    $description = get_string('presetfiles_desc', 'theme_minusone');
-
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
-        array('maxfiles' => 20, 'accepted_types' => array('.scss')));
-    $page->add($setting);
-
-    // Background image setting.
-    $name = 'theme_minusone/backgroundimage';
-    $title = get_string('backgroundimage', 'theme_minusone');
-    $description = get_string('backgroundimage_desc', 'theme_minusone');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'backgroundimage');
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
-
-    // Variable $body-color.
-    // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_minusone/brandcolor';
-    $title = get_string('brandcolor', 'theme_minusone');
-    $description = get_string('brandcolor_desc', 'theme_minusone');
-    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+    $setting = new admin_setting_configselect($name, $title, $description, $defaultcampus, $campuses);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

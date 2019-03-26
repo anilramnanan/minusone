@@ -22,7 +22,7 @@
  * that this tool is shared, nor used outside of this theme.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -55,7 +55,7 @@ use Sabberworm\CSS\Value\ValueList;
  * Very basic implementation covering simple needs for Bootstrap 4.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class autoprefixer {

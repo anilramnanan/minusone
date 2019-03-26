@@ -18,12 +18,12 @@
  * MinusOne.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart
+ * @copyright  2019 Open Campus Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2019032601;
+$plugin->version   = 2019032605;
 $plugin->requires  = 2018112800;
 $plugin->component = 'theme_minusone';

@@ -18,7 +18,7 @@
  * Overriden block settings renderer.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -33,7 +33,7 @@ use moodle_url;
  * Overriden block settings renderer.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class block_settings_renderer extends \block_settings_renderer {

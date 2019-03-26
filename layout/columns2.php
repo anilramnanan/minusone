@@ -53,4 +53,3 @@ $templatecontext = [
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
 echo $OUTPUT->render_from_template('theme_minusone/columns2', $templatecontext);
-

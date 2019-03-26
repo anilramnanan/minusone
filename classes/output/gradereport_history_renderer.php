@@ -18,7 +18,7 @@
  * Overriden gradereport_history renderer.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ use gradereport_history\output\user_button;
  * Overriden gradereport_history renderer.
  *
  * @package    theme_minusone
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class gradereport_history_renderer extends \gradereport_history\output\renderer {
