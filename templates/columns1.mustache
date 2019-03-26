@@ -68,6 +68,7 @@
 require(['theme_minusone/loader']);
 
 $( document ).ready(function() {
+   $('.course-content').addClass("{{uwicampus}}")
    $( document ).on('scroll', function(){
       s = Math.floor($(this).scrollTop());
       h = $('.header-uwi');

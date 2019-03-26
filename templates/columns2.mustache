@@ -102,6 +102,8 @@ require(['theme_minusone/drawer'], function(mod) {
 });
 
 $( document ).ready(function() {
+   $('.page-header-headings').addClass("{{uwicampus}}")
+   $('.course-content').addClass("{{uwicampus}}")
    $( document ).on('scroll', function(){
       s = Math.floor($(this).scrollTop());
       h = $('.header-uwi');
