@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost/columns2
+    @template theme_minusone/columns2
 
     Admin time setting template.
 
@@ -48,14 +48,14 @@
         "hasregionmainsettingsmenu": false
     }
 }}
-{{> theme_boost/head }}
+{{> theme_minusone/head }}
 
 <body {{{ bodyattributes }}}>
 <div id="page-wrapper">
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_boost/navbar }}
+    {{> theme_minusone/navbar }}
 
     <div id="page" class="container-fluid">
       <div class="header-padding-uwi"></div>
@@ -89,20 +89,19 @@
         </div>
     </div>
     {{{ output.standard_after_main_region_html }}}
-    {{> theme_boost/nav-drawer }}
-    {{> theme_boost/footer }}
+    {{> theme_minusone/nav-drawer }}
+    {{> theme_minusone/footer }}
 </div>
 
 </body>
 </html>
 {{#js}}
-require(['theme_boost/loader']);
-require(['theme_boost/drawer'], function(mod) {
+require(['theme_minusone/loader']);
+require(['theme_minusone/drawer'], function(mod) {
     mod.init();
 });
 
 
-<script>
    $( document ).ready(function() {
       $( document ).on('scroll', function(){
          s = $(this).scrollTop();
@@ -124,6 +123,5 @@ require(['theme_boost/drawer'], function(mod) {
          }
       })
    });
-</script>
 
 {{/js}}
