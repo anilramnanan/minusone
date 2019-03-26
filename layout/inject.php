@@ -29,25 +29,25 @@ $uwicampus = $theme->settings->uwicampus;
 
 $campuses = array(
 	'XCM' => array(
-		'',
+		'UWI',
 		'uwi.edu'
 	),
 	'OC' => array(
-		'Open Campus',
+		'UWI Open Campus',
 		'open.uwi.edu'
 	),
 	'STA' => array(
-		'St. Augustine',
+		'UWI St. Augustine',
 		'sta.uwi.edu'
 	),
 	'MON' => array(
-		'Mona',
+		'UWI Mona',
 		'mona.uwi.edu'
 	),
 	'CAV' => array(
-		'Cave Hill',
+		'UWI Cave Hill',
 		'cavehill.uwi.edu'
 	));
 
-   $uwicampusname = $campuses[$campus][0];
-   $uwicampusurl = $campuses[$campus][1];
+   $uwicampusname = $campuses[$uwicampus][0];
+   $uwicampusurl = $campuses[$uwicampus][1];
