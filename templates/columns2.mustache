@@ -57,8 +57,7 @@
 
     {{> theme_minusone/navbar }}
 
-    <div id="page" class="container-fluid">
-      <div class="header-padding-uwi"></div>
+    <div id="page" class="container-fluid page-container-uwi">
 
         {{{ output.full_header }}}
 
@@ -99,29 +98,5 @@
 require(['theme_minusone/loader']);
 require(['theme_minusone/drawer'], function(mod) {
     mod.init();
-});
-
-$( document ).ready(function() {
-   $('.page-header-headings').addClass("{{uwicampus}}")
-   $('.course-content').addClass("{{uwicampus}}")
-   $( document ).on('scroll', function(){
-      s = Math.floor($(this).scrollTop());
-      h = $('.header-uwi');
-      hp = $('.header-padding-uwi');
-      hsd = h.hasClass("slidedown")
-      if(s > 48){
-         console.log('hide');
-         if(hsd){
-            h.removeClass("slidedown").addClass("slideup");
-            hp.removeClass("slidedown").addClass("slideup");
-            //hp.hide();
-         }
-      } else {
-         console.log('show');
-         h.removeClass("slideup").addClass("slidedown");
-         hp.removeClass("slideup").addClass("slidedown");
-         //hp.show();
-      }
-   })
 });
 {{/js}}

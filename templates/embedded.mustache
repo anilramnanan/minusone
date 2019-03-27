@@ -44,7 +44,7 @@
 <body {{{ output.body_attributes }}}>
 
 {{{ output.standard_top_of_body_html }}}
-<div id="page">
+<div id="page" class="page-container-uwi">
     <div id="page-content">
         {{{ output.main_content }}}
     </div>
@@ -55,29 +55,4 @@
 {{#js}}
 require(['theme_minusone/loader']);
 
-$( document ).ready(function() {
-   $( document ).on('scroll', function(){
-      wh = $( window ).height();
-      dh = $( document ).height();
-      ds = ((dh-wh)>48)
-
-      s = Math.floor($(this).scrollTop());
-      h = $('.header-uwi');
-      hp = $('.header-padding-uwi');
-      hsd = h.hasClass("slidedown")
-      if(s > 48 && ds){
-         console.log('hide');
-         if(hsd){
-            h.removeClass("slidedown").addClass("slideup");
-            hp.removeClass("slidedown").addClass("slideup");
-            //hp.hide();
-         }
-      } elseif(ds) {
-         console.log('show');
-         h.removeClass("slideup").addClass("slidedown");
-         hp.removeClass("slideup").addClass("slidedown");
-         //hp.show();
-      }
-   })
-});
 {{/js}}

@@ -20,10 +20,15 @@
 
 <footer id="page-footer" class="py-3 bg-dark {{uwicampusfooter}} text-light">
     <div class="container-fluid">
+
+         <!-- OC Card deck for footer -->
+        <div class=""><small style="opacity:0.3">{{perfinfo}}</small></div>
+
         <div id="course-footer">{{{ output.course_footer }}}</div>
 
-        <div class="tool_usertours-resettourcontainer"></div>
-        <div class=""><small style="opacity:0.3">{{perfinfo}}</small></div>
+        <small>
+         <div class="tool_usertours-resettourcontainer"></div>
+        </small>
 
         <nav class="nav navbar-nav d-md-none">
             {{# output.custom_menu_flat }}
@@ -33,7 +38,9 @@
             {{/ output.custom_menu_flat }}
         </nav>
 
-        {{{ output.standard_footer_html }}}
+        <small>
+         {{{ output.standard_footer_html }}}
+        </small>
         {{{ output.standard_end_of_body_html }}}
 
         <div class="navbar-nav navbar-expand-lg mt-4 border-top campus-footer">

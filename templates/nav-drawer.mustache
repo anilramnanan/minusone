@@ -4,8 +4,7 @@
 
     Example context (json): {}
 }}
-<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex {{uwicampus}} {{^navdraweropen}}closed{{/navdraweropen}}" aria-hidden="{{#navdraweropen}}false{{/navdraweropen}}{{^navdraweropen}}true{{/navdraweropen}}" tabindex="-1">
-   <div class="header-padding-uwi"></div>
+<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex page-container-uwi {{uwicampus}} {{^navdraweropen}}closed{{/navdraweropen}}" aria-hidden="{{#navdraweropen}}false{{/navdraweropen}}{{^navdraweropen}}true{{/navdraweropen}}" tabindex="-1">
     {{> theme_minusone/flat_navigation }}
 </div>
 
@@ -57,8 +56,17 @@
    height:96px!important;
 }
 
-#nav-drawer .header-padding-uwi {
-   height:111px!important;
+.page-container-uwi {
+   margin-top:96px!important;
+   transition: margin 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+#page.page-container-uwi {
+   margin-top: 146px!important;
+}
+
+#nav-drawer.page-container-uwi {
+   padding-top:15px!important;
 }
 
 
@@ -73,6 +81,14 @@
 }
 .slidedown {
    max-height: 96px ;
+}
+
+.page-container-uwi.slideuptrack {
+   margin-top:0px!important;
+}
+
+.page-container-uwi.slidedowntrack {
+   margin: 96px!important;
 }
 
 .header-padding-uwi.slidedown {
