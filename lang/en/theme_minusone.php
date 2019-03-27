@@ -52,3 +52,7 @@ $string['privacy:drawernavopen'] = 'The current preference for the navigation dr
 
 $string['uwicampus'] = 'UWI Campus';
 $string['uwicampus_desc'] = 'The UWI Campus branding.';
+
+
+$string['uwicampusfooter'] = 'Campus footer colour';
+$string['uwicampusfooter_desc'] = 'Use UWI Campus branding for footer.';

@@ -26,6 +26,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $theme = theme_config::load('minusone');
 $uwicampus = $theme->settings->uwicampus;
+$uwicampusfooter = $theme->settings->uwicampusfooter;
+if ($uwicampusfooter) {
+	$uwicampusfooter = $uwicampus;
+}
 
 $campuses = array(
 	'XCM' => array(
@@ -56,7 +60,8 @@ $campuses = array(
 
 
 	$r = get_performance_info();
-	$h = substr(gethostname(), 0, 11);
+	//$h = substr(gethostname(), 0, 11);
+	$h = gethostname();
 	$l = $h . ' '. $_SERVER['HTTP_HOST'] .' '. time() . ' ' . $r['txt']."\n";
 	$f = '/data/tlog/' . $h . '.' . $_SERVER['HTTP_HOST'] . '.log';
 	$perfinfo =  $h . ' | ';

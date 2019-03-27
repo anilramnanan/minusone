@@ -18,12 +18,12 @@
     Page footer.
 }}
 
-<footer id="page-footer" class="py-3 bg-dark {{uwicampus}} text-light">
+<footer id="page-footer" class="py-3 bg-dark {{uwicampusfooter}} text-light">
     <div class="container-fluid">
         <div id="course-footer">{{{ output.course_footer }}}</div>
 
         <div class="tool_usertours-resettourcontainer"></div>
-
+        <div class=""><small style="opacity:0.3">{{perfinfo}}</small></div>
 
         <nav class="nav navbar-nav d-md-none">
             {{# output.custom_menu_flat }}
@@ -36,7 +36,7 @@
         {{{ output.standard_footer_html }}}
         {{{ output.standard_end_of_body_html }}}
 
-        <div  class="navbar-nav navbar-expand-lg mt-4 border-top campus-footer">
+        <div class="navbar-nav navbar-expand-lg mt-4 border-top campus-footer">
            <map name="Map">
    				<area shape="rect" coords="0,8,26,24" href="https://www.uwi.edu/anguilla.asp" target="_blank" alt="Anguilla">
    				<area shape="rect" coords="32,8,58,24" href="https://www.uwi.edu/antigua.asp" target="_blank" alt="Antigua and Barbuda">
@@ -59,7 +59,7 @@
 
 
 
-                  <span class="mr-auto navbar-text" title="{{perfinfo}}">
+                  <span class="mr-auto navbar-text">
                      &copy;{{year}}
                      <a href="https://{{{ uwicampusurl }}}" target="_blank">
                         {{uwicampusname}}</a>&nbsp;
