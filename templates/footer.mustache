@@ -19,7 +19,7 @@
 }}
 
 <footer id="page-footer" class="py-3 bg-dark {{uwicampus}} text-light">
-    <div class="container">
+    <div class="container-fluid">
         <div id="course-footer">{{{ output.course_footer }}}</div>
 
         <div class="tool_usertours-resettourcontainer"></div>
@@ -33,43 +33,43 @@
             {{/ output.custom_menu_flat }}
         </nav>
 
-        <div  class="container">
-        <map name="Map">
+        {{{ output.standard_footer_html }}}
+        {{{ output.standard_end_of_body_html }}}
 
-							<area shape="rect" coords="0,8,26,24" href="https://www.uwi.edu/anguilla.asp" target="_blank" alt="Anguilla">
-							<area shape="rect" coords="32,8,58,24" href="https://www.uwi.edu/antigua.asp" target="_blank" alt="Antigua and Barbuda">
-							<area shape="rect" coords="64,8,90,24" href="https://www.uwi.edu/bahamas.asp" target="_blank" alt="The Bahamas">
-							<area shape="rect" coords="96,8,122,24" href="https://www.uwi.edu/barbados.asp" target="_blank" alt="Barbados">
-							<area shape="rect" coords="128,8,154,24" href="https://www.uwi.edu/belize.asp" target="_blank" alt="Belize">
-							<area shape="rect" coords="160,8,186,24" href="https://www.uwi.edu/bermuda.asp" target="_blank" alt="Bermuda">
-							<area shape="rect" coords="192,8,218,24" href="https://www.uwi.edu/bvi.asp" target="_blank" alt="British Virgin Islands">
-							<area shape="rect" coords="224,8,250,24" href="https://www.uwi.edu/cayman.asp" target="_blank" alt="Cayman Islands">
-							<area shape="rect" coords="256,8,282,24" href="https://www.uwi.edu/dominica.asp" target="_blank" alt="Dominica">
-							<area shape="rect" coords="288,8,314,24" href="https://www.uwi.edu/grenada.asp" target="_blank" alt="Grenada">
-							<area shape="rect" coords="320,8,346,24" href="https://www.uwi.edu/jamaica.asp" target="_blank" alt="Jamaica">
-							<area shape="rect" coords="352,8,378,24" href="https://www.uwi.edu/montserrat.asp" target="_blank" alt="Montserrat">
-							<area shape="rect" coords="384,8,410,24" href="https://www.uwi.edu/stkitts.asp" target="_blank" alt="St Kitts and Nevis">
-							<area shape="rect" coords="416,8,442,24" href="https://www.uwi.edu/stlucia.asp" target="_blank" alt="St Lucia">
-							<area shape="rect" coords="448,8,474,24" href="https://www.uwi.edu/stvincent.asp" target="_blank" alt="St Vincent and the Grenadines">
-							<area shape="rect" coords="480,8,506,24" href="https://www.uwi.edu/tt.asp" target="_blank" alt="Trinidad and Tobago">
-							<area shape="rect" coords="512,8,538,24" href="https://www.uwi.edu/turks.asp" target="_blank" alt="Turks and Caicos">
+        <div  class="navbar-nav navbar-expand-lg mt-4 border-top">
+           <map name="Map">
+   				<area shape="rect" coords="0,8,26,24" href="https://www.uwi.edu/anguilla.asp" target="_blank" alt="Anguilla">
+   				<area shape="rect" coords="32,8,58,24" href="https://www.uwi.edu/antigua.asp" target="_blank" alt="Antigua and Barbuda">
+   				<area shape="rect" coords="64,8,90,24" href="https://www.uwi.edu/bahamas.asp" target="_blank" alt="The Bahamas">
+   				<area shape="rect" coords="96,8,122,24" href="https://www.uwi.edu/barbados.asp" target="_blank" alt="Barbados">
+   				<area shape="rect" coords="128,8,154,24" href="https://www.uwi.edu/belize.asp" target="_blank" alt="Belize">
+   				<area shape="rect" coords="160,8,186,24" href="https://www.uwi.edu/bermuda.asp" target="_blank" alt="Bermuda">
+   				<area shape="rect" coords="192,8,218,24" href="https://www.uwi.edu/bvi.asp" target="_blank" alt="British Virgin Islands">
+   				<area shape="rect" coords="224,8,250,24" href="https://www.uwi.edu/cayman.asp" target="_blank" alt="Cayman Islands">
+   				<area shape="rect" coords="256,8,282,24" href="https://www.uwi.edu/dominica.asp" target="_blank" alt="Dominica">
+   				<area shape="rect" coords="288,8,314,24" href="https://www.uwi.edu/grenada.asp" target="_blank" alt="Grenada">
+   				<area shape="rect" coords="320,8,346,24" href="https://www.uwi.edu/jamaica.asp" target="_blank" alt="Jamaica">
+   				<area shape="rect" coords="352,8,378,24" href="https://www.uwi.edu/montserrat.asp" target="_blank" alt="Montserrat">
+   				<area shape="rect" coords="384,8,410,24" href="https://www.uwi.edu/stkitts.asp" target="_blank" alt="St Kitts and Nevis">
+   				<area shape="rect" coords="416,8,442,24" href="https://www.uwi.edu/stlucia.asp" target="_blank" alt="St Lucia">
+   				<area shape="rect" coords="448,8,474,24" href="https://www.uwi.edu/stvincent.asp" target="_blank" alt="St Vincent and the Grenadines">
+   				<area shape="rect" coords="480,8,506,24" href="https://www.uwi.edu/tt.asp" target="_blank" alt="Trinidad and Tobago">
+   				<area shape="rect" coords="512,8,538,24" href="https://www.uwi.edu/turks.asp" target="_blank" alt="Turks and Caicos">
+   			</map>
 
-						</map>
 
 
-
-                  <div class="social pull-left" title="{{perfinfo}}">
-   						&copy; 2019
+                  <span class="mr-auto navbar-text" title="{{perfinfo}}">
+                     &copy;{{year}}
                      <a href="https://{{{ uwicampusurl }}}" target="_blank">
                         {{uwicampusname}}</a>&nbsp;
    						All Rights Reserved.&nbsp;
-   					</div>
-
-						<img class="pull-right d-none d-sm-block " src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map"/>
-						<img class="d-none d-sm-block d-md-none" src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" style="width:100%;"/>
+   					</span>
+                  <div class="ml-auto navbar-text pt-1">
+                     <img class="d-none d-md-block" src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map"/>
+                     <img class="d-sm-none" src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" style="width:100%;"/>
+                  </div>
         </div>
 
-        {{{ output.standard_footer_html }}}
-        {{{ output.standard_end_of_body_html }}}
     </div>
 </footer>
