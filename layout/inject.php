@@ -23,8 +23,10 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
+global $PAGE;
+$theme = $PAGE->theme;
 
-$theme = theme_config::load('minusone');
+//$theme = theme_config::load('minusone');
 $uwicampus = $theme->settings->uwicampus;
 $uwicampusfooter = $theme->settings->uwicampusfooter;
 if ($uwicampusfooter) {
