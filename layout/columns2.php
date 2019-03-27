@@ -55,7 +55,8 @@ $templatecontext = [
     'uwicampus' => $uwicampus,
     'uwicampusname' => $uwicampusname,
     'uwicampusurl' => $uwicampusurl,
-    'year' => date('Y')
+    'year' => date('Y'),
+    'perfinfo' => $perfinfo
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

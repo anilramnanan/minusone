@@ -35,7 +35,8 @@ $templatecontext = [
     'uwicampus' => $uwicampus,
     'uwicampusname' => $uwicampusname,
     'uwicampusurl' => $uwicampusurl,
-    'year' => date('Y')
+    'year' => date('Y'),
+    'perfinfo' => $perfinfo
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/columns1', $templatecontext);

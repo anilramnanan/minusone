@@ -51,3 +51,19 @@ $campuses = array(
 
    $uwicampusname = $campuses[$uwicampus][0];
    $uwicampusurl = $campuses[$uwicampus][1];
+
+
+
+
+	$r = get_performance_info();
+	$h = substr(gethostname(), 0, 11);
+	$l = $h . ' '. $_SERVER['HTTP_HOST'] .' '. time() . ' ' . $r['txt']."\n";
+	$f = '/data/tlog/' . $h . '.' . $_SERVER['HTTP_HOST'] . '.log';
+	$perfinfo =  $h . ' | ';
+	$perfinfo .= number_format($r['memory_total']/1024/1024, 1). 'M/';
+	$perfinfo .= number_format($r['memory_peak']/1024/1024, 1). 'M | ';
+	$perfinfo .= $r['sessionsize']. ' | ';
+	$perfinfo .= $r['dbqueries']. ' | ';
+	$perfinfo .= number_format($r['dbtime'], 3). 's/';
+	$perfinfo .= number_format($r['realtime'], 3). 's | ';
+	$perfinfo .= $r['serverload']. '';
