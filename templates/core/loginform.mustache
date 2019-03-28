@@ -98,12 +98,9 @@
 <div class="col-xl-6 col-sm-8 ">
 <div class="card">
     <div class="card-block">
-        {{#logourl}}
-            <h2 class="card-header text-center" ><img src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/logo-uwi-trans-{{uwicampus}}.png" title="{{uwicampusname}}" alt="{{uwicampusname}}"/></h2>
-        {{/logourl}}
-        {{^logourl}}
-            <h2 class="card-header text-center">{{sitename}}</h2>
-        {{/logourl}}
+        <div class="card-header text-left login-uwi {{uwicampus}}" >
+          <img src="{{{ config.wwwroot }}}/theme/minusone/pix/zero/logo-uwi-trans-{{uwicampus}}.png"/>
+        </div>
         <div class="card-body">
             {{#cansignup}}
                 <div class="sr-only">

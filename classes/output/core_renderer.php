@@ -423,7 +423,7 @@ class core_renderer extends \core_renderer {
      * @return string
      */
     public function render_login(\core_auth\output\login $form) {
-        global $CFG, $SITE;
+        global $CFG, $SITE, $PAGE;
 
         $context = $form->export_for_template($this);
 
@@ -441,6 +441,10 @@ class core_renderer extends \core_renderer {
         $context->logourl = $url;
         $context->sitename = format_string($SITE->fullname, true,
             ['context' => context_course::instance(SITEID), "escape" => false]);
+
+         $theme = $PAGE->theme;
+         $context->uwicampus = $theme->settings->uwicampus;
+
 
         return $this->render_from_template('core/loginform', $context);
     }
