@@ -23,10 +23,9 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
+require_once('inject.php');
 
 $bodyattributes = $OUTPUT->body_attributes([]);
-
-require_once('inject.php');
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -35,9 +34,11 @@ $templatecontext = [
     'uwicampus' => $uwicampus,
     'uwicampusname' => $uwicampusname,
     'uwicampusurl' => $uwicampusurl,
+    'uwimoodleinstancename' => $uwimoodleinstancename,
     'uwicampusfooter' => $uwicampusfooter,
     'year' => date('Y'),
     'perfinfo' => $perfinfo
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/columns1', $templatecontext);
+

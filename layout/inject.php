@@ -28,7 +28,12 @@ $theme = $PAGE->theme;
 
 //$theme = theme_config::load('minusone');
 $uwicampus = $theme->settings->uwicampus;
+$uwicampusname = $theme->settings->uwicampusname;
+$uwicampusurl = $theme->settings->uwicampusurl;
+$uwimoodleinstancename = $theme->settings->uwimoodleinstancename;
 $uwicampusfooter = $theme->settings->uwicampusfooter;
+
+
 if ($uwicampusfooter) {
 	$uwicampusfooter = $uwicampus;
 }
@@ -53,6 +58,10 @@ $campuses = array(
 	'CAV' => array(
 		'UWI Cave Hill',
 		'cavehill.uwi.edu'
+	),
+	'FIC' => array(
+		'UWI Five Islands Campus',
+		'fic.uwi.edu'
 	));
 
    $uwicampusname = $campuses[$uwicampus][0];
@@ -74,3 +83,7 @@ $campuses = array(
 	$perfinfo .= number_format($r['dbtime'], 3). 's/';
 	$perfinfo .= number_format($r['realtime'], 3). 's | ';
 	$perfinfo .= $r['serverload']. '';
+
+	global $SESSION;
+
+	//print_r($SESSION);

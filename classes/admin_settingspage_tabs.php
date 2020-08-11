@@ -16,7 +16,7 @@
 
 /**
  * @package   theme_minusone
- * @copyright 2016 Ryan Wyllie
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -24,7 +24,7 @@ defined('MOODLE_INTERNAL') || die();
 
 /**
  * @package   theme_minusone
- * @copyright 2016 Ryan Wyllie
+ * @copyright 2019 Open Campus Team
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class theme_minusone_admin_settingspage_tabs extends admin_settingpage {

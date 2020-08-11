@@ -34,9 +34,11 @@ $templatecontext = [
     'uwicampus' => $uwicampus,
     'uwicampusname' => $uwicampusname,
     'uwicampusurl' => $uwicampusurl,
+    'uwimoodleinstancename' => $uwimoodleinstancename,
     'uwicampusfooter' => $uwicampusfooter,
     'year' => date('Y'),
     'perfinfo' => $perfinfo
 ];
 
 echo $OUTPUT->render_from_template('theme_minusone/login', $templatecontext);
+

@@ -25,6 +25,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Advanced settings';
+$string['backgroundimage'] = 'Background image';
+$string['backgroundimage_desc'] = 'The image to display as a background of the site. The background image you upload here will override the background image in your theme preset files.';
+$string['brandcolor'] = 'Brand colour';
+$string['brandcolor_desc'] = 'The accent colour.';
 $string['bootswatch'] = 'Bootswatch';
 $string['bootswatch_desc'] = 'A bootswatch is a set of Bootstrap variables and css to style Bootstrap';
 $string['choosereadme'] = 'MinusOne is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
@@ -36,7 +40,7 @@ $string['generalsettings'] = 'General settings';
 $string['nobootswatch'] = 'None';
 $string['pluginname'] = 'MinusOne';
 $string['presetfiles'] = 'Additional theme preset files';
-$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/MinusOne_Presets">MinusOne presets</a> for information on creating and sharing your own preset files, and see the <a href="http://moodle.net/minusone">Presets repository</a> for presets that others have shared.';
+$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/MinusOne_Presets">MinusOne presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/minusone">Presets repository</a> for presets that others have shared.';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
 $string['privacy:metadata'] = 'The MinusOne theme does not store any personal data about any user.';
@@ -48,11 +52,12 @@ $string['region-side-pre'] = 'Right';
 $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
-
+$string['totop'] = 'Go to top';
 
 $string['uwicampus'] = 'UWI Campus';
 $string['uwicampus_desc'] = 'The UWI Campus branding.';
 
-
+$string['uwimoodleinstancename'] = 'Instance Name';
+$string['uwimoodleinstancename_desc'] = 'Optional instance name to display in header badge.';
 $string['uwicampusfooter'] = 'Campus footer colour';
 $string['uwicampusfooter_desc'] = 'Use UWI Campus branding for footer.';

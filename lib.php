@@ -18,7 +18,7 @@
  * Theme functions.
  *
  * @package    theme_minusone
- * @copyright  2019 Open Campus Team
+ * @copyright  2019 Open Campus Team - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -131,12 +131,14 @@ function theme_minusone_get_pre_scss($theme) {
     $scss = '';
     $configurable = [
         // Config key => [variableName, ...].
-        // 'brandcolor' => ['primary'],
+        //'brandcolor' => ['primary'],
         'uwicampus' => ['uwicampus'],
         'uwicampusname' => ['uwicampusname'],
+        'uwicampusname' => ['uwicampusname'],
         'uwicampusurl' => ['uwicampusurl'],
+        'uwimoodleinstancename' => ['uwimoodleinstancename'],
     ];
-
+    
     // Prepend variables first.
     foreach ($configurable as $configkey => $targets) {
         $value = isset($theme->settings->{$configkey}) ? $theme->settings->{$configkey} : null;

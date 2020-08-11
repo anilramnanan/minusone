@@ -32,6 +32,7 @@
 {{> theme_minusone/head }}
 
 <body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
 
 <div id="page-wrapper">
 
@@ -40,7 +41,7 @@
     <div id="page" class="container-fluid mt-0">
         <div id="page-content" class="row">
             <div id="region-main-box" class="col-12">
-                <section id="region-main" class="col-12">
+                <section id="region-main" class="col-12" aria-label="{{#str}}content{{/str}}">
                     {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
                     {{{ output.course_content_footer }}}
@@ -48,7 +49,6 @@
             </div>
         </div>
     </div>
-    {{{ output.standard_after_main_region_html }}}
 
 </div>
 
@@ -106,6 +106,8 @@ div.login-uwi.XCM,
 </body>
 </html>
 {{#js}}
-require(['theme_minusone/loader']);
-
+M.util.js_pending('theme_minusone/loader');
+require(['theme_minusone/loader'], function() {
+  M.util.js_complete('theme_minusone/loader');
+});
 {{/js}}

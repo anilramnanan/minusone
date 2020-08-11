@@ -42,12 +42,13 @@
 </head>
 
 <body {{{ output.body_attributes }}}>
+{{> core/local/toast/wrapper}}
 
 <div id="page-wrapper">
 
     {{{ output.standard_top_of_body_html }}}
 
-    <div id="page" class="container pb-3 page-container-uwi">
+    <div id="page" class="container pb-3">
 
         <div class="row">
             <div class="col-12 py-3">
@@ -56,7 +57,7 @@
         </div>
 
         <div id="page-content" class="row">
-            <section id="region-main" class="col-12">
+            <section id="region-main" class="col-12" aria-label="{{#str}}content{{/str}}">
                 {{{ output.main_content }}}
             </section>
         </div>
@@ -73,6 +74,8 @@
 </body>
 </html>
 {{#js}}
-require(['theme_minusone/loader']);
-
+M.util.js_pending('theme_minusone/loader');
+require(['theme_minusone/loader'], function() {
+  M.util.js_complete('theme_minusone/loader');
+});
 {{/js}}

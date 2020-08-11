@@ -31,6 +31,7 @@ $templatecontext = [
     'uwicampus' => $uwicampus,
     'uwicampusname' => $uwicampusname,
     'uwicampusurl' => $uwicampusurl,
+    'uwimoodleinstancename' => $uwimoodleinstancename,
     'uwicampusfooter' => $uwicampusfooter,
     'year' => date('Y'),
     'perfinfo' => $perfinfo

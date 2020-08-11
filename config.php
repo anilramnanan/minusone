@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once(__DIR__ . '/lib.php');
 
 $THEME->name = 'minusone';
-$THEME->sheets = [];
+$THEME->sheets = [''];
 $THEME->editor_sheets = [];
 $THEME->editor_scss = ['editor'];
 $THEME->usefallback = true;
@@ -146,7 +146,7 @@ $THEME->layouts = [
     )
 ];
 
-$THEME->parents = [];
+$THEME->parents = ['boost'];
 $THEME->enable_dock = false;
 $THEME->csstreepostprocessor = 'theme_minusone_css_tree_post_processor';
 $THEME->extrascsscallback = 'theme_minusone_get_extra_scss';
@@ -157,6 +157,4 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
-
-
 $THEME->javascripts_footer = array('uwi');

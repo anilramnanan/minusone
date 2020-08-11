@@ -42,10 +42,11 @@
 </head>
 
 <body {{{ output.body_attributes }}}>
+{{> core/local/toast/wrapper}}
 
 {{{ output.standard_top_of_body_html }}}
-<div id="page" class="page-container-uwi">
-    <div id="page-content">
+<div id="page">
+    <div id="page-content" class="d-block">
         {{{ output.main_content }}}
     </div>
 </div>
@@ -53,6 +54,8 @@
 </body>
 </html>
 {{#js}}
-require(['theme_minusone/loader']);
-
+M.util.js_pending('theme_minusone/loader');
+require(['theme_minusone/loader'], function() {
+  M.util.js_complete('theme_minusone/loader');
+});
 {{/js}}

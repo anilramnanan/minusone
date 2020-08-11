@@ -37,6 +37,7 @@
 {{> theme_minusone/head }}
 
 <body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
 
 <div id="page-wrapper">
 
@@ -44,7 +45,7 @@
 
     {{>theme_minusone/navbar-secure}}
 
-    <div id="page" class="container-fluid page-container-uwi">
+    <div id="page" class="container-fluid">
         {{! Secured full header }}
 
         <div id="page-header" class="row">
@@ -59,7 +60,7 @@
 
         <div id="page-content" class="row">
             <div id="region-main-box" class="col-12">
-                <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
+                <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
 
                     {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
@@ -67,7 +68,7 @@
 
                 </section>
                 {{#hasblocks}}
-                <section data-region="blocks-column">
+                <section data-region="blocks-column" aria-label="{{#str}}blocks{{/str}}">
                     {{{ sidepreblocks }}}
                 </section>
                 {{/hasblocks}}
@@ -87,5 +88,8 @@
 </body>
 </html>
 {{#js}}
-require(['theme_minusone/loader']);
+M.util.js_pending('theme_minusone/loader');
+require(['theme_minusone/loader'], function() {
+    M.util.js_complete('theme_minusone/loader');
+});
 {{/js}}
